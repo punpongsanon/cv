@@ -1,397 +1,273 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% E. Dunham -- Resume
+% Contents Copyright (C) 2014 - 2016, E. Dunham
 
-\documentclass[]{resume-enhanced}
+% LaTeX code for rendering the resume is distributed under the MIT license.
+% See LICENSE.txt. It means you can use the code for whatever you want,
+% including your own resume, but I'm not liable if it catches your computer on
+% fire.
 
+% Template originally developed by E. Dunham
+% https://github.com/edunham/resume/blob/master/resume.tex
+
+\documentclass[11pt]{article} % Set default font size to 11pt
+\input{preamble}
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+{{\Huge \bf Parinya Punpongsanon}}
+\smallskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\contact{parinya@mit.edu}
+        {http://punpongsanon.info}
+        {MIT CSAIL, 32 Vassar St. 32-208, Cambridge, MA 02139}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Employment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Parinya}{Punpongsanon}{ \urlstyle{same}\url{http://punpongsanon.info/} \\
-\href{mailto:parinya@mit.edu}{parinya@mit.edu} | +1 (617) 874 0711, +81 90 6600 0558
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\begin{minipage}[t]{0.33\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{minipage}[t]{0.55\textwidth} 
-\section{Education} 
-
-%\subsection{Osaka University}
-\descript{Ph.D. in Engineering}
-\location
-{	
-	September 2016 --- Osaka University, Japan
-}
-Systems Innovation, Graduate School of Engineering Science \\
-Advisor: Prof. Dr. Kosuke Sato and Assoc. Prof. Dr. Daisuke Iwai
-\sectionsep
-
-\descript{Master of Engineering}
-\location
-{
-	September 2013 --- Osaka University, Japan
-}
-Systems Innovation, Graduate School of Engineering Science \\
-Advisor: Prof. Dr. Kosuke Sato and Assoc. Prof. Dr. Daisuke Iwai
-\sectionsep
-
-%\subsection{King Mongkut's University of Technology Thonburi}
-\descript{Bachelor of Science}
-\location
-{
-	April 2010 --- King Mongkut's University of Technology Thonburi, Thailand
-}
-Applied Computer Science and Multimedia, \\ 
-Computer Science and Information Technology Department \\
-\location{Major GPA: 3.63 / 4.0 (1$^{st}$ class honor)}
-\sectionsep
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.40\textwidth} 
+\begin{description}
+	\squish
+	\experience{Postdoctoral Associate}
+	{Massachusetts Institute of Technology}
+	{01/2017 - Present}
 	
-\section{Research Interest}
-Spatial Augmented Reality, \\
-Human perception, \\
-Human-Computer Interaction, \\
-Personal Fabrication
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\section{Coursework}
-%\subsection{Graduate}
-%Advanced Machine Learning \\
-%Open Source Software Engineering \\
-%Advanced Interactive Graphics \\
-%Compilers + Practicum \\
-%Cloud Computing \\
-%\sectionsep
-
-%\subsection{Undergraduate}
-%Information Retrieval \\
-%Operating Systems \\
-%Artificial Intelligence + Practicum \\
-%Functional Programming \\
-%Computer Graphics + Practicum \\
-%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
-%Unix Tools and Scripting \\
-%\sectionsep
-
-\end{minipage}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\section{Links} 
-%Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
-%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
-%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
-%Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
-%Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
-%\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\end{minipage} 
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Experience}
-\begin{minipage}[t]{0.55\textwidth} 
+	Human-Computer Interaction Engineering (HCIE) Group\\
+	Computer Science and Artificial Intelligence Laboratory (CSAIL)\\
+	Under advisory of \textit{Prof. Stefanie Mueller}
 	
-\runsubsection{MIT CSAIL}
-\descript{| Postdoctoral Associate }
-\location{January 2017 – Present | Cambridge, MA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-Setup a new laboratory at MIT CSAIL with Stefanie. \\
-Project: Spatial Augmented Reality + Personal Fabrication \\
-Host advisor: Prof. Stefanie Mueller
-\sectionsep
-
-\runsubsection{JSPS}
-\descript{| Postdoctoral Fellow }
-\location{October 2016 – December 2016 | Tokyo, Japan}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-Young researcher fellowship sponsor by Japan Society for the Promotion Science (JSPS) 
-host at Osaka University. \\
-Project: Modify Human Perception in Spatial Augmented Reality \\
-Host advisor: Prof. Dr. Kosuke Sato
-\sectionsep
+	\experience{Postdoctoral Fellow}
+	{Osaka University}
+	{10/2016 - Present}
 	
-\runsubsection{Telecom ParisTech}
-\descript{| Visiting Scholar + Research Internship }
-\location{December 2013 – February 2014 | Paris, France}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-Computer Graphics Group (TSI-CNSR) \\
-Project: Lazy 3D Navigation using non-critical body interaction \\
-Host advisor: Prof. Dr. Tamy Boubekeur
-\sectionsep
-
-\runsubsection{Kiatnakin Bank PLC.}
-\descript{| Programmer Analyst }
-\location{June 2010 – September 2011 | Bangkok, Thailand}
-\begin{tightemize}
-	\item Maintenance and Support Core Banking system.
-	\item Develop a new payment channel (e.g., ATMs, Loans).
-	\item Support a tax payment system (Banking PND).
-\end{tightemize}
-\sectionsep
-
-\runsubsection{University Of Fukui}
-\descript{| Exchange Student }
-\location{October 2008 – September 2009 | Fukui, Japan}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-Human and Computational Intelligent Systems Laboratory, under Department of Multimedia Engineering \\
-Host advisor: Prof. Yasuhiro Ogoshi
-\sectionsep
-
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.40\textwidth} 
+	Intelligence Sensing Group\\
+	Graduate School of Engineering Science\\
+	Sponsors by Japan Society for the Promotion of Science (JSPS)\\
+	Under advisory of \textit{Prof. Kosuke Sato}
 	
-\runsubsection{Academic Service}
-\descript{ }
-\location{Organization Committee}
-\begin{tightemize}
-\item ACM UIST 2017 (Documentation Chair)
-\item ACM SUI 2016 (AV Chair)
-\item VRSJ 2016 (Designer Chair)
-\item ICAT-EGVE 2015 (Designer Chair)
-\end{tightemize}
+\end{description}
 
-\location{Peer-Reviewer}
-\begin{tightemize}
-\item IEEE ISMAR (2017, 2016)
-\item ACM SIGGRAPH Asia (2016)
-\item ACM SUI (2017, 2016)
-\item ACM UIST (2017, 2016)
-\item ACM VRST (2016, 2015)
-\item ACM HRI (2016, 2015)
-\end{tightemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\location{Student Volunteer}
-\begin{tightemize}
-	\item ACM UIST (2016)
-	\item ACM UbiComp (2015)
-	\item ACM SIGGRAPH Asia (2014)
-	\item ACM Multimedia (2012)
-\end{tightemize}
-\sectionsep
+\begin{description}
+	\squish
+	\experience{Ph.D. in Engineering}
+	{Osaka University, Japan}
+	{September 2016}
+	
+	System Innovation, Graduate School of Engineering Science,\\
+	Under advisory of \textit{Prof. Kosuke Sato} and \textit{Prof. Daisuke Iwai}
+	
+	\experience{Bachelor of Science}
+	{King Mongkut's University of Technology, Thailand}
+	{April 2010}
+	
+	School of Computer Science and Information Technology,\\
+	MAJOR GPA: 3.63/4.00 (First Class Honor)
+	
+\end{description}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Skills}
-\subsection{Programming}
+\begin{description}
+	\squish
+	\experience{Visiting Researcher}
+	{Telecom ParisTech (Universite Paris-Saclay)}
+	{12/2013 - 02/2014}
+	
+	Computer Graphics Group\\
+	Collaborated under project 'Lazy 3D Navigation using Non-Critical Body Interaction'\\
+	Under advisory of \textit{Prof. Tamy Boubekeur}
+	
+	\experience{Exchange Student}
+	{Fukui University}
+	{10/2008 - 09/2009}
+	
+	Human and Computational Intelligence System Laboratory\\
+	School of Engineer\\
+	Sponsors by Japan Society for the Promotion of Science (JSPS)\\
+	Under advisory of \textit{Prof. Yasuhiro Ogoshi}
+	
+\end{description}
 
-Java \textbullet{} JavaScript \textbullet{} Matlab \textbullet{} Python \\
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} PL/SQL \\
-OpenGL \textbullet{} OpenCV \textbullet{} CUDA* \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Grants and Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\sectionsep
+\begin{description}
+	\squish
+	\experience{Best Student Paper}
+	{IEEE Kansai Section}
+	{2017}
+	
+	\experience{Best Student Volunteer}
+	{ACM UIST 2016}
+	{2016}
+	
+	\experience{Grant}
+	{JSPS Research Fellow}
+	{2016}
+	
+	\experience{Best Paper}
+	{IEEE 3DUI 2015}
+	{2015}
+	
+	\experience{Best Student Volunteer}
+	{ACM SIGGRAPH Asia 2014}
+	{2014}
+	
+	\experience{Best Presentation}
+	{Korea-Japan Workshop on Mixed Reality 2013}
+	{2013}
+	
+	\experience{Grant}
+	{MEXT Scholarship (Oct. 2011 - Sep. 2016)}
+	{2011}
+	
+	\experience{$1^{st}$ Class Honor}
+	{King Mongkut's University of Technology Thonburi}
+	{2010}
+	
+	\bigskip
+	
+\end{description}
 
-\subsection{Research}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Computer Vision (Tracking, IR Vision, Calibration) \textbullet{} User Experiment (Psychophysical, Analysis) \\
-Image Processing (Color Compensation)  \textbullet{} 3D Modeling (Surface Validation) \\
+\skill{Software}
+{Python, C/\CPP, HTML/CSS/Javascript, MATLAB, OpenCV}
 
-\sectionsep
+\skill{Hardware}
+{Projector-Camera system, Laser Cutter, 3D Printer}
 
-\end{minipage} 
+\pagebreak
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Selected Publication}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\section{Research}
-%\runsubsection{Cornell Robot Learning Lab}
-%\descript{| Head Undergrad Research}
-%\location{Jan 2014 – Present | Ithaca, NY}
-%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  Publication submitted.
-%\sectionsep
-
-%\runsubsection{Cornell Phonetics Lab}
-%\descript{| Head Undergraduate Researcher}
-%\location{Mar 2012 – May 2013 | Ithaca, NY}
-%Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
-%\sectionsep
-
-\section{Selected Publication}
-\location{Journals}
-\begin{itemize}
-\item
+\textbf{JOURNALS}
+\publicationthelist
 {
-	Parinya Punpongsanon*, Emilie Guy, Daisuke Iwai, Kosuke Sato, Tamy Boubekeur, ''Extended LazyNav: Virtual 3D Ground Navigation for Large Displays and Head-Mounted Displays''. IEEE Transactions on Visualization and Computer Graphics, 2016. (In press)
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Emilie Guy, Daisuke Iwai, Kosuke Sato, and Tamy Boubekeur}
+				{Extended LazyNav: Virtual 3D Ground Navigation for Large Displays and Head-Mounted Displays}
+				{IEEE Transactions on Visualization and Computer Graphics}
+				{Vol. 23, No. 8, pp. 1952-1963.}
+				{August 2017.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, and Kosuke Sato}
+				{SoftAR: Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality}
+				{IEEE Transactions on Visualization and Computer Graphics}
+				{Vol. 21, No. 11, pp. 1279-1288.}
+				{November 2016.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, and Kosuke Sato}
+				{Projection-based Visualization of Tangential Deformation of Nonrigid Surface by Deformation Estimation Using Infrared Texture}
+				{Springer: Virtual Reality}
+				{Vol. 19, No. 1, pp. 45-56.}
+				{March 2015.}
 }
-\item
+
+\textbf{CONFERENCE PAPERS AND NOTES}
+\publicationthelist
 {
-	Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato, ''SoftAR: Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality''. IEEE Transactions on Visualization and Computer Graphics, vol.21(11), pp. 1279--1288, November, 2016.
+	\publication{Emilie Guy, \underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, Kosuke Sato, and Tamy Boubekeur}
+	{LazyNav: 3D Ground Navigation with Non-Critical Body Parts}
+	{In Proceedings of IEEE Symposium on 3D User Interfaces (3DUI)}
+	{pp. 43-50,}
+	{2015.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Emilie Guy, Tamy Boubekeur, Daisuke Iwai, and Kosuke Sato}
+	{Ground Navigation in 3D Scene using Simple Body Motions}
+	{In Proceedings of International Conference on Artificial Reality and Telexistence and Eurographics Symposium on Virtual Environments (ICAT-EGVE)}
+	{pp. 19-20,}
+	{2014.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, and Kosuke Sato}
+	{SoftAR: Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality}
+	{In Proceedings of IEEE Symposium on Mixed and Augmented Reality (ISMAR)}
+	{pp. 1279-1288,}
+	{2016.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, and Kosuke Sato}
+	{A Preliminary Study on Altering Surface Softness Perception using Augmented Color and Deformation}
+	{In Proceedings of IEEE Symposium on Mixed and Augmented Reality (ISMAR)}
+	{pp. 301-032,}
+	{2014.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, and Kosuke Sato}
+	{DeforMe: Projection-based Visualization of Deformable Surfaces using Invisible Textures}
+	{In Proceedings of ACM SIGGRAPH Asia (Emerging Technologies)}
+	{Article 8,}
+	{2013.},
+	\publication{\underline{\texttt{Parinya Punpongsanon}}, Daisuke Iwai, and Kosuke Sato}
+	{Infrared-based Tangential Deformation Estimation Technique}
+	{In Proceedings of the $6^{th}$ Thailand-Japan International Academic Conference (TJIA)}
+	{Article 3,}
+	{2013.},
 }
-\item
-{
-	Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato, ''Projection-based Visualization of Tangential Deformation of Nonrigid Surface by Deformation Estimation Using Infrared Texture''. Virtual Reality, Springer, vol.19(1), pp. 45--56, March, 2015.
-}
-\end{itemize}
 
-\location{Conference Papers and Technical Notes}
-\begin{itemize}
-\item
-{
-	Emilie Guy, Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato, Tamy Boubekeur. ''LazyNav: 3D Ground Navigation with Non-critical Body Parts''. In Proceedings of IEEE Symposium on 3D User Interfaces (3DUI), pp. 43--50, 2015. [Best Paper]
-}
-\item
-{
-	Parinya Punpongsanon*, Emilie Guy, Tamy Boubekeur, Daisuke Iwai, Kosuke Sato. ''Ground Navigation in 3D Scene using Simple Body Motions''. In Proceedings of International Conference on Artificial Reality and Telexistence and Eurographics Symposium on Virtual Environments (ICAT-EGVE), pp. 19--20, 2014.
-}
-\item
-{
-	Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato. ''A Preliminary Study on Altering Surface Softness Perception using Augmented Color and Deformation''. In Proceedings of IEEE Symposium on Mixed and Augmented Reality (ISMAR), pp. 301--302, 2014.
-}
-\item
-{
-	Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato. ''DeforMe: Projection-based Visualization of Deformable Surfaces using Invisible Textures''. In Proceedings of ACM SIGGRAPH Asia (Emerging Technologies), Article 8, 2013.	
-}
-\item
-{
-	Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato. ''Infrared-based Tangential Deformation Estimation Technique''. Presented in the 6th Thailand-Japan International Academic Conference (TJIA), 2013.	
-}
-\item
-{
-	Parinya Punpongsanon*, Daisuke Iwai, Kosuke Sato. ''Projection-based Mixed Reality for Deformable Surfaces''. Presented in the 6th Korea-Japan Workshop on Mixed Reality (KJMR), 2013. [Best Presentation]	
-}
-\end{itemize}
-\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Invited Talks}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Grants and Awards} 
-\begin{tabular}{rll}
-2016	& Best Student Volunteer	& ACM UIST 2016 \\
-2016	& Grants					& JSPS Research Fellow (Apr. 2016 -- Mar. 2018) \\
-2015	& Best Paper				& IEEE 3DUI 2015 \\
-2014	& Best Student Volunteer	& ACM SIGGRAPH Asia 2014 \\
-2013	& Best Presentation			& Korea-Japan Workshop on Mixed Reality 2013 \\
-2011	& Grants					& MEXT Scholarship (Oct. 2011 -- Sep. 2016)
-\end{tabular}
-\sectionsep
+\begin{description}
+	\squish
+	\experience{University of Tokyo, Japan}
+           {}
+           {2016}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SOCIETIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Societies} 
+    `Projection-based Mixed Reality for Deformable Objects'
 
-%\begin{tabular}{rll}
-%	Since 2016	& VRSJ		& Virtual Reality Society \\
-%	Since 2014	& IEEE		& Computer Society \\
-%	Since 2013	& ACM    	& Computer Society
-%\end{tabular}
-%\sectionsep
+\experience{The $19^{th}$ Meeting on Image Recognition and Understanding (MIRU 2016), Japan}
+           {}
+           {2016}
+           
+	`SoftAR: Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality'
 
-%\end{minipage} 
+\experience{IEEE TVCG VR/AR Special Session}
+           {ACM SIGGRAPH 2016, USA}
+           {2016}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     REFERENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{References} 
-\descript{Assoc. Prof. Dr. Daisuke Iwai}
-M.Eng and Ph.D. co-advisor \\
-\location{Associate Professor, SENS Laboratory at Osaka University}
-daisuke.iwai@sys.es.osaka-u.ac.jp | (+81) 6 68 50 63 73 \\
+    `SoftAR: Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality'
 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\experience{The $18^{th}$ Annual Meeting on Virtual Reality in Japan}
+		   {3DUI Top Conference, Japan}
+		   {2015}
 
-\descript{Prof. Dr. Tamy Boubekeur}
-Visiting scholar research advisor \\
-\location{Professor, Computer Graphics Group at Telecom ParisTech}
-tamy.boubekeur@telecom-paristrch.fr | (+33) 1 45 81 77 58 \\
+	`LazyNav: 3D Ground Navigation with Non-Critical Body Parts'
 
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\experience{The $6^{th}$ Korea-Japan Workshop on Mixed Reality, Japan}
+		   {}
+		   {2013}
 
-\descript{Prof. Dr. Stefanie Mueller}
-Postdoctoral associate advisor \\
-\location{Assistant Professor, HCI Engineering Group at MIT CSAIL}
-stefanie.mueller@mit.edu | (+1) 857 253 1096 \\
+	`Projection-based Mixed Reality for Deformable Surfaces'
 
-\sectionsep
+\end{description}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Academic Service}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\skill{Organization Committee}
+{}
+
+UIST 2017 (Documentation Chair) $\bullet$ SCF 2017 (Local Arrangement Chair) $\bullet$ CHI 2017 (Session Chair) $\bullet$ SUI 2016 (Documentation Chair) $\bullet$ VRSJ 2016 (Design Chair) $\bullet$ ICAT-EGVE 2015 (Design Chair)
+
+\skill{Peer-Reviewer}
+{}
+
+IEEE ISMAR (2017, 2016) $\bullet$ ACM SIGGRAPH/SIGGRAPH Asia (2017, 2016) $\bullet$ ACM SUI (2016) $\bullet$ ACM UIST (2017, 2016, 2015) $\bullet$ ACM VRST (2017, 2016, 2015) $\bullet$ ACM HRI (2017, 2016, 2015)
+
+\skill{Student Volunteer}
+{}
+
+ACM UIST 2016 $\bullet$ ACM UbiComp 2015 $\bullet$ ACM SIGGRAPH Asia 2014 $\bullet$ ACM Multimedia 2012
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\bigskip
+	\hfill \small September 2017
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
